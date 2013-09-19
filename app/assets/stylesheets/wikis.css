@@ -1,0 +1,203 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+ .course-title .span12{
+	background-color: #1abc9c;
+	border-radius: 8px 8px 0 0;
+	padding: 22px 0px 20px 0px;
+	color: #34495e;
+	font-size: 19px;
+	font-weight: 700;
+}
+
+.course-body {
+	padding:22px 0px 20px 0px;
+}
+
+
+.body {
+	background-color: #2c3e50;
+	border-radius: 8px 8px 6px 6px;
+	color:white;
+}
+
+.body * {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.body ul {
+	list-style-type: none;
+	margin:0;
+	height:inherit;
+}
+
+
+.body li {
+	background-color: #34495E;
+	color:white;
+	margin-bottom: 2px;
+	overflow: hidden;
+	cursor:pointer;
+}
+
+.body li .fui-arrow-right{
+	float:right;
+}
+
+#curriculum, #year, #course{
+}
+
+#main {
+}
+.big-show .content {
+	width:257px;
+	color: #798795;
+}
+
+.big-show h4 {
+	font-size: 17px;
+	font-weight: 700;
+	color:white;
+}
+
+.big-show li {
+	padding:28px 28px 20px 28px;
+}
+
+.big-show li.active {
+    background-color: transparent;
+    color: #1abc9c;
+}
+.big-show li.active h4{
+	color: #1abc9c;
+
+}
+
+.big-show li.active .content{
+    color: #1abc9c;
+}
+
+.big-show li:first-child {
+	border-radius: 8px 0px 0 0;
+}
+
+.big-show li:last-child {
+	border-radius: 0 0 0px 6px;
+}
+
+.big-show li .fui-arrow-right {
+	font-size:18px;
+	line-height: 35px;
+}
+
+.small-show {
+	padding-right: 5px;
+}
+
+
+.small-show li {
+	background-color:transparent;
+	padding:5px 11px 5px 11px;
+	margin-top:10px;
+}
+
+.small-show li.active {
+	background-color: #1abc9c;
+	border-radius: 8px 8px 8px 8px;
+	color:#34495e;
+}
+.small-show li.active .content {
+	color:#34495e;
+}
+.small-show h4 {
+	font-size: 14px;
+}
+
+.between-column {
+	margin-left:2px;
+}
+
+.content {
+	float:left;
+	font-size:13px;
+}
+
+.content h4 {
+	margin: 1px 0 3px;
+}
+
+#course .fui-arrow-right {
+	line-height: 35px;
+}
+
+/* Footer */
+
+#search-bar .footer {
+	border-radius: 0 0 0px 6px;
+}
+
+#search-result {
+	width:798px;
+}
+#search-result .footer{
+	border-radius: 0 0 6px 0;
+}
+
+.footer{
+	background-color:#1abc9c; 
+	border-radius:0 0 6px 6px;
+	bottom:0;
+	color: #34495e;
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 23px;
+	margin-bottom: 0;
+	min-height: 33px;
+	padding:22px 28px 20px 28px;
+}
+
+.search input[type="search"],
+.search input[type="text"]{
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: #34495e;
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 23px;
+	margin: 0;
+	padding: 5px 0;
+	text-indent: 0;
+
+}
+
+.search span[class*='fui-']{
+	line-height: 23px;
+	margin-top:2px;
+	font-size:19px;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+	color: #34495e;
+}
+input[type="search"]::-moz-placeholder{
+	color: #34495e;
+}
+
+/* search-info */
+
+#search-info {
+	margin-left:7px;
+}
+
+/*show page*/
+
+.sidebox {
+}

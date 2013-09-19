@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Isewiki</title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= googlefont_link_tag "Lato" %>
+  <%= googlefont_link_tag "Roboto:200,400,500" %>
+  <%= googlefont_link_tag "Source+Sans+Pro:300,400,600" %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="navbar navbar-inverse topbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <div class="nav-collapse collapse">
+       <a id="logo" class="brand">ISE Lounge</a>
+       <ul class="nav">
+          <li>
+          <form class="navbar-search form-search pull-right">
+            <div class="input-append">
+              <input type="text" class="search-query span3" placeholder="Search">
+              <button class="btn" style="font-size:14.994"><i class="fui-search"></i></button>
+            </div>
+          </form></li>
+       </ul>
+       <ul class="nav pull-right block-login">
+          <li><a id="login" class="brand" href="#">Login</a></li>
+       </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= yield %>
+
+<div id="bottom-menu" class="bottom-menu">
+  <div class="container">
+  <div class="row">
+  		<div class="span2 brand">
+  			ISE Lounge
+  		</div>
+  		<div class="span8">
+  			<ul class="bottom-links">
+  				<li><a>About Us</a></li>
+  				<li><a>Privacy</a></li>
+  				<li><a>Term</a></li>
+  				<li><a>Follow Us</a></li>
+  				<li><a>Support</a></li>
+  				<li><a>Link</a></li>
+  			</ul>
+  		</div>
+  		<div class="span2">
+  			<ul class="bottom-icons">
+  				<li><a class="fui-pinterest"></a></li>
+  				<li><a class="fui-facebook"></a></li>
+  				<li><a class="fui-twitter"></a></li>
+  			</ul>
+  		</div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

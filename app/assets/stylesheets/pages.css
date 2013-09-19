@@ -1,0 +1,41 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.animation {
+	height:600px;
+}
+[class*="scene"] {
+	font-family: 'Source Sans Pro", Roboto', 'Lato', sans-serif;
+	font-size:72px;
+	font-weight:300;
+	margin: auto 0;
+    left: 0;
+    line-height: 70px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+
+}
+[class*="scene"] h5{
+	font-size:22px;
+	font-weight:200;
+}
+.scene1 .capitalize {
+	font-size:78px;
+	font-weight:500;
+}
+.scene2 .capitalize {
+	font-size:92px;
+	font-weight:500;
+}
+
+.scene1 {
+	display:none;
+}
+
+.scene2 {
+}
