@@ -1,0 +1,74 @@
+class MakeCommentsController < ApplicationController
+  before_action :set_make_comment, only: [:show, :edit, :update, :destroy]
+
+  # GET /make_comments
+  # GET /make_comments.json
+  def index
+    @make_comments = MakeComment.all
+  end
+
+  # GET /make_comments/1
+  # GET /make_comments/1.json
+  def show
+  end
+
+  # GET /make_comments/new
+  def new
+    @make_comment = MakeComment.new
+  end
+
+  # GET /make_comments/1/edit
+  def edit
+  end
+
+  # POST /make_comments
+  # POST /make_comments.json
+  def create
+    @make_comment = MakeComment.new(make_comment_params)
+
+    respond_to do |format|
+      if @make_comment.save
+        format.html { redirect_to @make_comment, notice: 'Make comment was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @make_comment }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @make_comment.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PATCH/PUT /make_comments/1
+  # PATCH/PUT /make_comments/1.json
+  def update
+    respond_to do |format|
+      if @make_comment.update(make_comment_params)
+        format.html { redirect_to @make_comment, notice: 'Make comment was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @make_comment.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /make_comments/1
+  # DELETE /make_comments/1.json
+  def destroy
+    @make_comment.destroy
+    respond_to do |format|
+      format.html { redirect_to make_comments_url }
+      format.json { head :no_content }
+    end
+  end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_make_comment
+      @make_comment = MakeComment.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def make_comment_params
+      params[:make_comment]
+    end
+end

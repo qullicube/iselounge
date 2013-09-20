@@ -1,0 +1,2 @@
+module MakeRatingsHelper
+end

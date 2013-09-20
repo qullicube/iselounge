@@ -1,0 +1,25 @@
+<h1>Listing make_ratings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @make_ratings.each do |make_rating| %>
+      <tr>
+        <td><%= link_to 'Show', make_rating %></td>
+        <td><%= link_to 'Edit', edit_make_rating_path(make_rating) %></td>
+        <td><%= link_to 'Destroy', make_rating, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Make rating', new_make_rating_path %>
