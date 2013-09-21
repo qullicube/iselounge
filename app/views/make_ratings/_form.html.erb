@@ -1,0 +1,17 @@
+<%= form_for(@make_rating) do |f| %>
+  <% if @make_rating.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@make_rating.errors.count, "error") %> prohibited this make_rating from being saved:</h2>
+
+      <ul>
+      <% @make_rating.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

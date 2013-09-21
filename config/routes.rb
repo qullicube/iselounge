@@ -1,4 +1,16 @@
 Isewiki::Application.routes.draw do
+  resources :make_ratings
+
+  resources :make_comments
+
+  resources :comments
+
+  resources :ratings
+
+  resources :courses
+
+  resources :users
+
   resources :wikis
   resources :homes
   resources :pages, :only => :show
