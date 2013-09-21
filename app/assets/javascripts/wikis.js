@@ -17,12 +17,11 @@ $(function() {
 
 
 	// Dynamic height
-	var height = $("#main").height();
+	var height = $("#main").height() + $("#search-tool").height()-1;
 
-	$("#curriculum").height(height);
 	$("#year").height(height);
 	$("#course").height(height);
-
+	$("#search-tool").css("bottom", $("#search-tool").height()+4);
 	// Nav Selection
 	var _duration = 400;
 	$("#curriculum li").click(function() {
@@ -53,15 +52,13 @@ $(function() {
 	});
 
 	$("#search-course").focus(function(){
-		$("#search-tool").clearQueue().switchClass("span5", "span12", focus_duration);
-		$("#search-course").clearQueue().switchClass("span4", "span12", focus_duration);
+		$("#search-tool").clearQueue().switchClass("span4", "span12", focus_duration);
 	});
 
 	$("#search-course").blur(function(){
 		setTimeout(function(){
 			if(!$("#search-course").is(":focus")){
-			$("#search-tool").clearQueue().switchClass("span12", "span5", focus_duration);
-			$("#search-course").clearQueue().switchClass("span12", "span4", focus_duration);
+			$("#search-tool").clearQueue().switchClass("span12", "span4", focus_duration);
 		}},2000);
 	});
 });
