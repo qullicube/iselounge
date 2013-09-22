@@ -141,7 +141,7 @@
 
 }
 
-.fui-search{
+.search .fui-search{
 	line-height: 35px;
 	font-size:18px;
 }
@@ -160,7 +160,7 @@ input[type="search"]::-moz-placeholder{
 }
 
 #search-tool {
-	position:absolute;
+	position:relative;
 }
 
 

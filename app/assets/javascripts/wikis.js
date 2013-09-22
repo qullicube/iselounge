@@ -19,9 +19,10 @@ $(function() {
 	// Dynamic height
 	var height = $("#main").height() + $("#search-tool").height()-1;
 
+	$("#main").height(height);
 	$("#year").height(height);
 	$("#course").height(height);
-	$("#search-tool").css("bottom", $("#search-tool").height()+4);
+	$("#search-tool").css("bottom", $("#search-tool").height());
 	// Nav Selection
 	var _duration = 400;
 	$("#curriculum li").click(function() {
