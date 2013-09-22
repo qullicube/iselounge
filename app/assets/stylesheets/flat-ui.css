@@ -4928,9 +4928,8 @@ input.search-query {
   color: #e74c3c;
 }
 .bottom-menu {
-  background: #ebedef;
-  color: #b8bfc7;
-  padding: 40px 0;
+  background: white;
+  color: #bdc3c7;
 }
 .bottom-menu .brand {
   font-size: 23.996px;
@@ -4962,8 +4961,8 @@ input.search-query {
 
 }
 .bottom-menu-inverse {
-  background-color: #34495e;
-  color: #677786;
+  background-color: white;
+  color: #bdc3c7;
 }
 .bottom-menu-large {
   padding-bottom: 52px;

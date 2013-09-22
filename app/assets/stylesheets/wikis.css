@@ -17,7 +17,9 @@
 
 .body {
 	background-color: white;
-	color:black;
+	color:rgb(127, 130, 133);
+	border-bottom:3px solid rgb(189, 195, 199);
+	border-top:3px solid rgb(189, 195, 199);
 }
 
 .body * {
@@ -60,21 +62,21 @@
 
 .big-show li {
 	padding:28px 28px 20px 28px;
-	background-color: #34495E;
+	background-color: rgb(219, 222, 224);
 	color:white;
 }
 
 .big-show li.active {
-    background-color: gray;
-    color: black;
+    background-color: rgb(236, 240, 241);
+    color: rgb(33, 177, 245);
 }
 .big-show li.active h4{
-	color: black;
+	color: rgb(33, 177, 245);
 
 }
 
 .big-show li.active .content{
-    color: black;
+    color: rgb(33, 177, 245);
 }
 
 .big-show li .fui-arrow-right {
@@ -83,7 +85,7 @@
 }
 
 .small-show li {
-	padding:8px 16px 8px 12px;
+	padding:18.7px 16px 18.7px 12px;
 }
 .small-show h4 {
 	font-size: 14px;
@@ -113,9 +115,9 @@
 }
 
 .footer{
-	background-color:#1abc9c; 
+	background-color:rgb(44, 62, 80); 
 	bottom:0;
-	color: #34495e;
+	color: white;
 	font-size: 19px;
 	font-weight: 700;
 	line-height: 23px;
@@ -131,7 +133,7 @@
 	background: none;
 	border: none;
 	box-shadow: none;
-	color: #34495e;
+	color: white;
 	font-size: 19px;
 	font-weight: 700;
 	line-height: 23px;
@@ -147,10 +149,10 @@
 }
 
 input[type="search"]::-webkit-input-placeholder {
-	color: #34495e;
+	color: white;
 }
 input[type="search"]::-moz-placeholder{
-	color: #34495e;
+	color: white;
 }
 
 /* search-info */
@@ -171,7 +173,7 @@ input[type="search"]::-moz-placeholder{
 }
 
 #year {
-	background-color:gray;
+	background-color:rgb(236, 240, 241);
 }
 
 
@@ -182,3 +184,9 @@ input[type="search"]::-moz-placeholder{
 #course {
 	background:white;
 }
+
+
+
+
+/* ----- Show ------*/
+
