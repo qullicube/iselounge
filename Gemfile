@@ -23,8 +23,8 @@ gem 'turbolinks'
 
 gem 'jbuilder'
 gem 'twitter-bootstrap-rails'
-gem 'jquery-ui-rails'
-gem 'designmodo-flatuipro-rails'
+gem 'jquery-ui-rails', '4.0.4'
+gem 'designmodo-flatuipro-rails', '1.1.3.1'
 
 group :doc do
 	gem 'sdoc', require: false
