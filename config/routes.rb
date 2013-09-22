@@ -1,4 +1,8 @@
 Isewiki::Application.routes.draw do
+  resources :professor_courses
+
+  resources :professors
+
   resources :make_ratings
 
   resources :make_comments
