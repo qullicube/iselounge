@@ -109,7 +109,7 @@ var init = function() {
 
 	//Show page fadeIn
 	$("#show-course").fadeIn("slow");
-
+	
 }
 
 $(document).ready(init);

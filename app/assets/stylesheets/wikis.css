@@ -196,9 +196,6 @@ input[type="search"]::-moz-placeholder{
 
 /* ----- Show ------*/
 
-.show *{
-	font-family: "Lato", sans-serif;
-}
 
 .show h6 {
 	font-weight:18px;
@@ -216,7 +213,7 @@ input[type="search"]::-moz-placeholder{
 	margin:0 auto;
 	overflow:hidden;
 	text-align: center;
-	padding:15px 0;
+	padding:17px 0 0 0;
 	display:table;
 }
 
@@ -250,6 +247,36 @@ input[type="search"]::-moz-placeholder{
 	padding: 30px;
 }
 
+.show-comment-block {
+	border-bottom:1px solid #ebedef ;
+	padding-bottom:7px;
+}
+.show-comment-content {
+	padding-top:11px;
+	padding-bottom:18px;
+}
+.show-comment-footer {
+	font-size:14.5px;
+	overflow:hidden;
+}
+.show-comment-footer .right {
+	float:right;
+}
+
+#modal .modal-body{
+	height:400px;
+}
+
+#modal .modal-header h6{
+	font-size:22px;
+	font-weight:200;
+	padding-top:12px;
+	padding-bottom:10px;
+}
+
+.prime {
+	padding:16px;
+}
 .border-left {
 	border-left: 1px solid rgb(189, 195, 199);
 }

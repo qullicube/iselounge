@@ -1,3 +1,4 @@
+
 <div id="show-course" class="body show" style="display:none">
 	<div class="row-fluid">
 		<div class="span3 span-no-left">
@@ -23,9 +24,85 @@
 					<%= @course.description %>
 				</div>
 				<div class="show-block" style="height:300px">
-					Course Review
+					<div style="height:250px">
+					  <div class="show-comment-block prime">
+								<div class="show-comment-content">
+								This course is great! I really like this course!! Ajarn is so jai deeeee.
+								</div>
+								<div class="show-comment-footer">
+								<% 5.times do %>
+								<span class="fui-star-2"></span>
+								<% end %>
+								<span class="right"><strong>By</strong> Decha Tesapirat</span>
+								</div>
+					  </div>
+					  <div class="show-comment-block prime">
+								<div class="show-comment-content">
+								Without C, we would be programming in OBOL
+								</div>
+								<div class="show-comment-footer">
+								<% 5.times do %>
+								<span class="fui-star-2"></span>
+								<% end %>
+								<span class="right"><strong>By</strong> Putti Orungrochkul</span></div>
+					  </div>
+					</div>
+					<div class="pull-right"><a href="#modal" role="button" class="btn btn-inverse btn-large btn-block" data-toggle="modal">View More</a></div>
+					
+					<div id="modal" class="modal hide fade" role="dialog" aria-hidden="true">
+						<div class="modal-header">
+						<h6><span class="fui-chat"></span>&nbsp;&nbsp;&nbsp;Course Review</h6>
+						</div>
+						<div class="modal-body">
+							<div class="show-comment-block">
+								<div class="show-comment-content">
+								This course is great! I really like this course!! Ajarn is so jai deeeee.
+								</div>
+								<div class="show-comment-footer">
+								<% 5.times do %>
+								<span class="fui-star-2"></span>
+								<% end %>
+								<span class="right"><strong>By</strong> Decha Tesapirat</span>
+								</div>
+							</div>
+							<div class="show-comment-block">
+								<div class="show-comment-content">
+								Without C, we would be programming in OBOL
+								</div>
+								<div class="show-comment-footer">
+								<% 5.times do %>
+								<span class="fui-star-2"></span>
+								<% end %>
+								<span class="right"><strong>By</strong> Putti Orungrochkul</span></div>
+					 	 	</div>
+							<div class="show-comment-block">
+								<div class="show-comment-content">
+								This subject is not easy to get A.
+								</div>
+								<div class="show-comment-footer">
+								<% 3.times do %>
+								<span class="fui-star-2"></span>
+								<% end %>
+								<span class="right"><strong>By</strong> Anonymous#1988</span>
+								</div>
+							</div>
+							<div class="show-comment-block">
+								<div class="show-comment-content">
+								I hate this subjecttttt.
+								</div>
+								<div class="show-comment-footer">
+								<% 1.times do %>
+								<span class="fui-star-2"></span>
+								<% end %>
+								<span class="right"><strong>By</strong> Anonymous#5172</span>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-inverse btn-large" data-dismiss="modal" aria-hidden="true">Close</button>
+						</div>
+					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
