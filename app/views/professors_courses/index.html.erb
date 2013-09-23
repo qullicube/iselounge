@@ -1,0 +1,25 @@
+<h1>Listing professors_courses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @professors_courses.each do |professors_course| %>
+      <tr>
+        <td><%= link_to 'Show', professors_course %></td>
+        <td><%= link_to 'Edit', edit_professors_course_path(professors_course) %></td>
+        <td><%= link_to 'Destroy', professors_course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Professors course', new_professors_course_path %>

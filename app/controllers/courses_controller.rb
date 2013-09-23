@@ -61,6 +61,12 @@ class CoursesController < ApplicationController
     end
   end
 
+  def fetch_col2
+    @courses = Course.where(:year => params[:year], :semester => params[:semester])
+    respond_to do |format|
+        format.html { render :partial => "wikis/colarray3"}
+    end
+  end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_course

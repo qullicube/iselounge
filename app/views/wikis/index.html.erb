@@ -1,38 +1,38 @@
 
-  <div class="body">
+  <div id="wiki" class="body" class="display:none">
   <div id="main" class="row-fluid">
     <div id="curriculum" class="span4">
         <ul class="big-show">
           <li class="active">
-              <div class="content">
+              <div class="content" data-catid="0">
                 <h4>ICE</h4>
                 Information and Communication
               </div>
               <div class="fui-arrow-right"></div>  
           </li>
           <li>
-              <div class="content">
+              <div class="content" data-catid="1">
                 <h4>AERO</h4>
                 Aerospace
               </div>
               <div class="fui-arrow-right"></div>  
           </li>
           <li>
-              <div class="content">
+              <div class="content" data-catid="2">
                 <h4>ADME</h4>
                 Automotive Design and Manufacturing
               </div>
               <div class="fui-arrow-right"></div>  
           </li>
           <li>
-              <div class="content">
+              <div class="content" data-catid="3">
                 <h4>NANO</h4>
                 Nano Technology
               </div>
               <div class="fui-arrow-right"></div>  
           </li>
             <li>
-              <div class="content">
+              <div class="content" data-catid="4">
                 <h4>Others</h4>
                 General Education
               </div>
@@ -42,70 +42,20 @@
     </div>
     <div id="year" class="span4">
         <ul class="small-show">
-          <li>
-              <div class="content">
-                <h4>Year 1 S1</h4>
-               </div>
-              <div class="fui-arrow-right"></div>  
-          </li>
-          <li>
-              <div class="content">
-                <h4>Year 1 S2</h4>
-               </div>
-              <div class="fui-arrow-right"></div>  
-          </li>
-          <li>
-              <div class="content">
-                <h4>Year 2 S1</h4>
-               </div>
-              <div class="fui-arrow-right"></div>  
-          </li>
-          <li>
-              <div class="content">
-                <h4>Year 2 S2</h4>
-               </div>
-              <div class="fui-arrow-right"></div>  
-          </li>
-          <li>
-              <div class="content">
-                <h4>Year 3 S1</h4>
-                </div>
-              <div class="fui-arrow-right"></div>  
-          </li>
-          <li>
-              <div class="content">
-                <h4>Year 3 S2</h4>
-                </div>
-              <div class="fui-arrow-right"></div>  
-          </li>
-          <li>
-              <div class="content">
-                <h4>Year 4 S1</h4>
-               </div>
-              <div class="fui-arrow-right"></div>  
-          </li>
-          <li>
-              <div class="content">
-                <h4>Year 4 S2</h4>
-               </div>
-              <div class="fui-arrow-right"></div>  
-          </li>
+        <% 4.times do |y| %>
+          <% 2.times do |s| %>
+          <li><%= render partial: "col2", :locals => {:year => y+1, :semester => s+1} %></li>
+          <% end %>
+        <% end %>
         </ul>
     </div>
     <div id="course" >
       <ul class="small-show">
-        <li>
-          <div class="content">
-          <h4>User Interface Design</h4>
-          2143416
-          </div>
-          <div class="fui-arrow-right"></div>  
-        </li>
       </ul>
     </div>
   </div>
   <div class="row-fluid" style="height:0px">
-    <div class="span12">
+    <div class="span12" style="height:0px">
     <div id="search-tool" class="span4">
           <div class="footer search">
             <!-- AJAX CALL ONLY -->
@@ -117,3 +67,4 @@
   </div>
   </div>
   </div>
+  <div id="course-viewer" style="background:blue;"></div>

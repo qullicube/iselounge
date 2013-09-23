@@ -1,4 +1,6 @@
 Isewiki::Application.routes.draw do
+  resources :dummies
+
   resources :professor_courses
 
   resources :professors
@@ -74,5 +76,6 @@ Isewiki::Application.routes.draw do
   #     resources :products
   #   end
 
+  get 'coursefetch2' => 'courses#fetch_col2' 
   root :to => 'homes#index'
 end

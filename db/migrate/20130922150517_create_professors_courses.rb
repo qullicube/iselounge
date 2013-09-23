@@ -1,6 +1,6 @@
-class CreateProfessorCourses < ActiveRecord::Migration
+class CreateProfessorsCourses < ActiveRecord::Migration
   def change
-    create_table :professor_courses do |t|
+    create_table :professors_courses do |t|
       t.integer :professors_id
 	  t.integer :courses_id
       t.timestamps

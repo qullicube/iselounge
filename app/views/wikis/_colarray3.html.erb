@@ -1,0 +1,11 @@
+<% @courses.each do |course| %>
+<li>
+<a href="wikis/<%= course.id %>">
+<div class="content">
+<h4><span data-tag="course-name"><%= course.name %></span></h4>
+<span data-tag="course-number"><%= course.number %></span>
+</div>
+<div class="fui-arrow-right"></div>  
+</a>
+</li>
+<% end %>

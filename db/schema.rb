@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130922150517) do
+ActiveRecord::Schema.define(version: 20130922201749) do
 
   create_table "comments", force: true do |t|
     t.text     "comment_text"
@@ -21,7 +21,17 @@ ActiveRecord::Schema.define(version: 20130922150517) do
 
   create_table "courses", force: true do |t|
     t.string   "name"
-    t.string   "semester"
+    t.integer  "number"
+    t.integer  "year"
+    t.integer  "semester"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "dummies", force: true do |t|
+    t.string   "name"
+    t.integer  "foo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -41,16 +51,16 @@ ActiveRecord::Schema.define(version: 20130922150517) do
     t.datetime "updated_at"
   end
 
-  create_table "professor_courses", force: true do |t|
-    t.integer  "professors_id"
-    t.integer  "courses_id"
+  create_table "professors", force: true do |t|
+    t.string   "name"
+    t.string   "courses_teach_by"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "professors", force: true do |t|
-    t.string   "name"
-    t.string   "courses_teach_by"
+  create_table "professors_courses", force: true do |t|
+    t.integer  "professors_id"
+    t.integer  "courses_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

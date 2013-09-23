@@ -18,8 +18,8 @@
 .body {
 	background-color: white;
 	color:rgb(127, 130, 133);
-	border-bottom:3px solid rgb(189, 195, 199);
-	border-top:3px solid rgb(189, 195, 199);
+	border-bottom:2px solid rgb(189, 195, 199);
+	border-top:2px solid rgb(189, 195, 199);
 }
 
 .body * {
@@ -68,15 +68,13 @@
 
 .big-show li.active {
     background-color: rgb(236, 240, 241);
-    color: rgb(33, 177, 245);
+    color:#798795;
+    /*color: rgb(33, 177, 245);*/
 }
-.big-show li.active h4{
-	color: rgb(33, 177, 245);
+.big-show li.active *{
+	color:#798795;
+	/*color: rgb(33, 177, 245);*/
 
-}
-
-.big-show li.active .content{
-    color: rgb(33, 177, 245);
 }
 
 .big-show li .fui-arrow-right {
@@ -85,10 +83,13 @@
 }
 
 .small-show li {
-	padding:18.7px 16px 18.7px 12px;
+	padding:17px 16px 17px 16px;
 }
 .small-show h4 {
-	font-size: 14px;
+	font-size: 16px;
+}
+.small-show a:hover {
+	color:inherit;
 }
 
 .between-column {
@@ -185,12 +186,70 @@ input[type="search"]::-moz-placeholder{
 	background:white;
 }
 
+#course li {
+	padding:17px 16px 3px 16px;
+
+}
+
 
 
 
 /* ----- Show ------*/
 
+.show *{
+	font-family: "Lato", sans-serif;
+}
+
+.show h6 {
+	font-weight:18px;
+	font-weight:200;
+}
 
 .show-block {
-	border:1px solid rgb(189, 195, 199);
+	border-bottom:1px solid rgb(189, 195, 199);
+	padding:13px 18px 10px 20px;
+	line-height: 25px;
+	font-size:18px;
+}
+
+.show-rating {
+	margin:0 auto;
+	overflow:hidden;
+	text-align: center;
+	padding:15px 0;
+	display:table;
+}
+
+.show-year {
+	margin:0 auto;
+	padding:15px 0;
+}
+
+.show-year-block {
+	background-color: #34495e;
+	border-radius: 6px 6px 6px 6px;
+	color: #ffffff;
+	padding: 21px 22px;
+	margin-bottom:5px;
+	text-align: center;
+	width:100%;
+	font-size:18px;
+	font-weight:300;
+}
+
+.show-rating-block {
+	background-color: #34495e;
+	border-left: 2px solid #16a085;
+	border-radius: 6px 6px 6px 6px;
+	color: #ffffff;
+	float:left;
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0 12px 0 0;
+	outline: none;
+	padding: 30px;
+}
+
+.border-left {
+	border-left: 1px solid rgb(189, 195, 199);
 }
